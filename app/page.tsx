@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 font-mono">
@@ -9,19 +11,32 @@ export default function Home() {
         <div className="h-px w-16 mx-auto bg-black"></div>
 
         <p className="text-lg sm:text-xl">
-          A collection of data visualizations for the San Francisco Municipal
-          Transit Agency.
+          A collection of data{" "}
+          <Link
+            href="/visualizations"
+            className="underline hover:text-gray-600"
+          >
+            visualizations
+          </Link>{" "}
+          and{" "}
+          <Link href="/apis" className="underline hover:text-gray-600">
+            apis
+          </Link>{" "}
+          for the San Francisco Municipal Transit Agency.
         </p>
 
         <div className="h-px w-32 mx-auto bg-black"></div>
 
         <div className="space-y-4 text-sm sm:text-base">
-          <p>No official affiliation with SFMTA. Built with public data.</p>
+          <p>No affiliation with SFMTA. Built with public data.</p>
         </div>
       </main>
 
       <footer className="mt-16 text-xs">
-        © {new Date().getFullYear()} sfmta.dev
+        © {new Date().getFullYear()}{" "}
+        <Link href="/about" className="underline hover:text-gray-600">
+          sfmta.dev
+        </Link>
       </footer>
     </div>
   );
