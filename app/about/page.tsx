@@ -13,8 +13,21 @@ export default function About() {
           operations of the San Francisco Municipal Transportation Agency.
         </p>
         <p>
-          <Link href="https://brandonhol.land" className="underline hover:text-gray-600" target="_blank">brandonhol.land</Link> {"//"}{" "}
-          <Link href="https://tetrahedron.dev" className="underline hover:text-gray-600" target="_blank">Tetrahedron Labs</Link>
+          <Link
+            href="https://brandonhol.land"
+            className="underline hover:text-gray-600"
+            target="_blank"
+          >
+            brandonhol.land
+          </Link>{" "}
+          {"//"}{" "}
+          <Link
+            href="https://tetrahedron.dev"
+            className="underline hover:text-gray-600"
+            target="_blank"
+          >
+            Tetrahedron Labs
+          </Link>
         </p>
       </main>
     </div>

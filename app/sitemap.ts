@@ -27,10 +27,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-        url: "https://sfmta.dev/visualizations/fare-evasion",
-        lastModified: new Date(),
-        changeFrequency: "daily",
-        priority: 1,
-      },
+      url: "https://sfmta.dev/visualizations/fare-evasion",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1,
+    },
   ];
 }
