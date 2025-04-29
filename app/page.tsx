@@ -17,8 +17,12 @@ export default function Home() {
             className="underline hover:text-gray-600"
           >
             visualizations
-          </Link>{" "}
-          and{" "}
+          </Link>
+          ,{" "}
+          <Link href="/tools" className="underline hover:text-gray-600">
+            tools
+          </Link>
+          , and{" "}
           <Link href="/apis" className="underline hover:text-gray-600">
             apis
           </Link>{" "}
